@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+    <title>PDMS - PLANT DISEASE MONITORING SYSTEM</title>
+    <meta content="" name="description">
+    <meta content="" name="keywords">
+
+    <!-- Favicons -->
+    <link href="../static/AdminResources/img/favicon.JPG" rel="icon">
+    {#    <link href="../static/AdminResources/img/apple-touch-icon.png" rel="apple-touch-icon">#}
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,700,700i|Roboto:100,300,400,500,700|Philosopher:400,400i,700,700i"
+          rel="stylesheet">
+
+    <!-- Vendor CSS Files -->
+    <link href="../static/AdminResources/vendor/aos/aos.css" rel="stylesheet">
+    <link href="../static/AdminResources/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="../static/AdminResources/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+    <link href="../static/AdminResources/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+    <link href="../static/AdminResources/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+    <!-- Template Main CSS File -->
+    <link href="../static/AdminResources/css/style.css" rel="stylesheet">
+
+
+</head>
+
+<body>
+
+<!-- ======= Header ======= -->
+<header id="header" class="header fixed-top d-flex align-items-center">
+    <div class="container d-flex align-items-center justify-content-between">
+
+        <div id="logo">
+            <h1 style="font-size:35px"><a href="/"><span>P</span>DMS</a></h1>
+            <!-- Uncomment below if you prefer to use an image logo -->
+            <!-- <a href="index.html"><img src="../static/AdminResources/img/logo.png" alt="" title="" /></a>-->
+        </div>
+
+        <nav id="navbar" class="navbar">
+            <ul class="m-2">
+                <li><a class="nav-link scrollto" href="/#hero">Home</a></li>
+                <li><a class="nav-link scrollto" href="/#about-us">About Project</a></li>
+                <li><a class="nav-link scrollto" href="/#features">Why PDMS ?</a></li>
+                <li><a class="nav-link scrollto" href="/#usage">How To Use PDMS ?</a></li>
+
+            </ul>
+            <a href="/usePdms" class="btn btn-success text-white"
+               style="font-size:13px">USE PDMS</a>
+
+
+            <i class="bi bi-list mobile-nav-toggle"></i>
+        </nav><!-- .navbar -->
+
+    </div>
+</header>
+<!-- End Header -->-->
+
+<main id="main">
+
+    <!-- ======= Breadcrumbs ======= -->
+    <section class="breadcrumbs">
+        <div class="container mt-2">
+
+            <div class="d-flex justify-content-between align-items-center">
+                <h2>USE PDMS</h2>
+                <ol>
+                    <li><a href="/">Home</a></li>
+                    <li>Use PDMS</li>
+                </ol>
+            </div>
+
+        </div>
+    </section><!-- End Breadcrumbs -->
+
+    <!-- ======= steps to use PDMS Section ======= -->
+    <section id="steps" class="padd-section text-center pb-5 pt-5">
+
+        <div class="container" data-aos="fade-up">
+
+            {% if Error %}
+                <div class="bg-warning p-2">
+                    {{ Error }}<br>
+                    <a href="/usePdms#contact" class="btn-secondary col-lg-4 mx-auto mt-3">
+                        UPLOAD THE IMAGE HERE AGAIN !!!
+                    </a>
+                </div>
+            {% endif %}
+
+            <div class="section-title text-center mb-4">
+                <h2>How to use PDMS ?</h2>
+                <p class="separator">Steps to use PDMS (Plant Disease Monitoring System).</p>
+            </div>
+
+            <div class="row" data-aos="fade-up" data-aos-delay="100">
+
+                <div class="col-md-6 col-lg-4">
+                    <div class="feature-block  mb-2" style="">
+                        {#              <img src="../static/AdminResources/img/svg/paint-palette.svg" alt="img">#}
+                        <h4>1) UPLOAD THE IMAGE ACCORDING TO THE - " DO'S AND DONT'S " GIVEN BELOW</h4>
+
+                        <p style="font-size: 15px" class="text-justify mt-2">
+                            Refer Below strictly and upload image otherwise PDMS will not accept the image uploaded.
+                        </p>
+
+                        <a href="#image-upload" class="btn btn-success btn-outline-success mt-3">How to
+                            upload Image ??</a>
+
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-4">
+                    <div class="feature-block  mb-2">
+                        <h4>2) PDMS will detect the disease of your crop leaf</h4>
+                        <p style="font-size: 15px" class="text-warning mt-2">
+                            Currently the (Deep-learning) model of PDMS will only detect disease of the following Crops
+                            :<br>
+                            &nbsp&nbsp 1) Potato
+                            &nbsp&nbsp 2) Tomato
+                        </p>
+
+                        <a href="#contact" class="btn btn-success btn-outline-success mt-3">Upload Image for
+                            Detection</a>
+
+
+                        {#                        <a href="/usePdms" class="btn btn-success btn-outline-success mt-3">Use PDMS</a>#}
+
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-4">
+                    <div class="feature-block  mb-2" style="">
+                        {#              <img src="../static/AdminResources/img/svg/paint-palette.svg" alt="img">#}
+                        <h4>3) CONGRATULATIONS !!! YOUR DISEASE IS DETECTED</h4>
+                        <p style="font-size: 15px" class="text-justify mt-2">
+                            After Uploding the image the PDMS system will automatically detect the disease
+                            and will give the output.
+                        </p>
+
+
+                        <a href="https://plantvillage.psu.edu/" class="btn btn-success btn-outline-success mt-3">
+                            Credits of information (Plantvillage)</a>
+
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+    </section>
+
+
+    <hr>
+
+    <!-- ======= upload image here Section ======= -->
+    <section id="contact" class="padd-section">
+
+        <div class="container aos-init aos-animate" data-aos="fade-up">
+            <div class="section-title text-center">
+                <h2>Upload Image For Prediction !!</h2>
+                <p class="separator">UPLOAD IMAGE OF "TOMATO" OR "POTATO" CROP LEAF ONLY ACCORDING TO ABOVE
+                    TUTORIAL.</p>
+            </div>
+
+            <div class="row justify-content-center text-center aos-init aos-animate" data-aos="fade-up"
+                 data-aos-delay="100">
+
+
+                <div class="col-8">
+                    <div class="form">
+                        <form method="post" action="/makeprediction" novalidate
+                              enctype="multipart/form-data">
+
+
+                            <div class="mb-3">
+                                <div class="form-group">
+                                    <p style="font-size: x-large">UPLOAD IMAGE :</p>
+
+                                    <input type="file" name="image" class="form-control"
+                                           placeholder="upload your file here.." required accept="image/*">
+                                </div>
+                                <div class="text-center mt-3">
+                                    <button class="btn btn-primary" type="submit">Submit</button>
+                                </div>
+
+
+                            </div>
+
+
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- ======= upload image here Section over======= -->
+
+    <hr>
+
+
+    <!-- ======= how to image upload Section ======= -->
+    <section id="image-upload" class="padd-section mt-5 text-center">
+
+        <div class="container" data-aos="fade-up">
+
+
+            <div class="row" data-aos="fade-up" data-aos-delay="100">
+
+                <div class="section-title text-center text-warning">
+                    <h2>DO'S & DON'T ON HOW TO UPLOAD IMAGE</h2>
+
+                </div>
+
+                <div class="col-md-6 col-lg-6">
+                    <div class="feature-block">
+                        <h4 style="font-size: large" class="text-success">Correct Method</h4>
+
+                        <img src="../static/AdminResources/img/do_img.png"
+                             class="img-fluid h-75 w-75" alt="img">
+
+                        <p style="font-size: 20px" class="text-justify mt-2 text-success p-2">
+                            The System works well with single leaf at a time, so try uploading images with one leaf.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-6">
+                    <div class="feature-block">
+                        <h4 style="font-size: large" class="text-danger">In-Correct Method</h4>
+
+                        <img src="../static/AdminResources/img/dont_img.jpg"
+                             class="img-fluid h-75 w-75" alt="img">
+
+                        <p style="font-size: 20px" class="text-justify mt-2 text-danger p-2">
+                            The System won't predict when more leaves in one image, it is good at predicting one leaf at
+                            a time. </p>
+
+                    </div>
+                </div>
+
+                <div class="col-6 mx-auto">
+                    <a href="#contact" class="btn btn-success btn-outline-success mt-3">Upload Image for
+                        Detection</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- End how to image upload Section -->
+
+
+</main><!-- End #main -->
+
+<!-- ======= Footer ======= -->
+<footer class="footer">
+
+
+    <div class="copyrights mt-0">
+        <div class="bg-light p-2">
+            <p>&copy; Copyrights (Prepared and made by) - SIMONI SHAH.
+                <br>All rights reserved.</p>
+            <div class="credits">
+            </div>
+        </div>
+    </div>
+
+</footer><!-- End  Footer -->
+
+<a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i
+        class="bi bi-arrow-up-short"></i></a>
+
+<!-- Vendor JS Files -->
+<script src="../static/AdminResources/vendor/aos/aos.js"></script>
+<script src="../static/AdminResources/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+<script src="../static/AdminResources/vendor/glightbox/js/glightbox.min.js"></script>
+<script src="../static/AdminResources/vendor/php-email-form/validate.js"></script>
+<script src="../static/AdminResources/vendor/swiper/swiper-bundle.min.js"></script>
+
+<!-- Template Main JS File -->
+<script src="../static/AdminResources/js/main.js"></script>
+
+</body>
+
+</html>

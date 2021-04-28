@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+    <title>PDMS - PLANT DISEASE MONITORING SYSTEM</title>
+    <meta content="" name="description">
+    <meta content="" name="keywords">
+
+    <!-- Favicons -->
+    <link href="../static/AdminResources/img/favicon.JPG" rel="icon">
+    {#    <link href="../static/AdminResources/img/apple-touch-icon.png" rel="apple-touch-icon">#}
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,700,700i|Roboto:100,300,400,500,700|Philosopher:400,400i,700,700i"
+          rel="stylesheet">
+
+    <!-- Vendor CSS Files -->
+    <link href="../static/AdminResources/vendor/aos/aos.css" rel="stylesheet">
+    <link href="../static/AdminResources/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="../static/AdminResources/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+    <link href="../static/AdminResources/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+    <link href="../static/AdminResources/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+    <!-- Template Main CSS File -->
+    <link href="../static/AdminResources/css/style.css" rel="stylesheet">
+
+
+</head>
+
+<body>
+
+<!-- ======= Header ======= -->
+<header id="header" class="header fixed-top d-flex align-items-center">
+    <div class="container d-flex align-items-center justify-content-between">
+
+        <div id="logo">
+            <h1 style="font-size:35px"><a href="/"><span>P</span>DMS</a></h1>
+            <!-- Uncomment below if you prefer to use an image logo -->
+            <!-- <a href="index.html"><img src="../static/AdminResources/img/logo.png" alt="" title="" /></a>-->
+        </div>
+
+        <nav id="navbar" class="navbar">
+            <ul class="m-2">
+                <li><a class="nav-link scrollto" href="/#hero">Home</a></li>
+                <li><a class="nav-link scrollto" href="/#about-us">About Project</a></li>
+                <li><a class="nav-link scrollto" href="/#features">Why PDMS ?</a></li>
+                <li><a class="nav-link scrollto" href="/#usage">How To Use PDMS ?</a></li>
+
+            </ul>
+            <a href="/usePdms" class="btn btn-success text-white"
+               style="font-size:13px">USE PDMS</a>
+
+
+            <i class="bi bi-list mobile-nav-toggle"></i>
+        </nav><!-- .navbar -->
+
+    </div>
+</header>
+<!-- End Header -->
+
+<main id="main">
+
+
+    <!-- ======= Breadcrumbs ======= -->
+    <section class="breadcrumbs">
+        <div class="container mt-2">
+
+            <div class="d-flex justify-content-between align-items-center">
+                <h2>YOUR DISEASE DETECTION RESULT</h2>
+                <ol>
+                    <li><a href="/">Home</a></li>
+                    <li>YOUR RESULTS</li>
+                </ol>
+            </div>
+
+        </div>
+    </section><!-- End Breadcrumbs -->
+
+    <!-- ======= About Us Section ======= -->
+    <section id="about-us" class="about-us padd-section pb-0 pt-4">
+        <div class="container" data-aos="fade-up">
+            <div class="row justify-content-center text-justify">
+
+                <div class="section-title text-center">
+                    <h2 class="text-warning" style="font-weight: 400">HURRAY !!! THE DISEASE IS DETECTED</h2>
+
+                </div>
+
+                <div class="col-md-8 col-lg-8 mb-3">
+                    <div class="about-content text-center mt-2" data-aos="fade-left" data-aos-delay="100">
+
+                        <h2 class="text-uppercase text-decoration-underline" style="font-weight: 900"> DISEASE : <span
+                                class="text-danger">{{ result }}</span></h2>
+
+                        <h2 style="font-weight: 500"> PATHOGEN : <span class="text-warning">{{ Pathogen }}</span></h2>
+
+                    </div>
+                </div>
+
+
+                <div class="col-md-4 col-lg-4 text-center">
+                    <img src="{{ input_img_path }}"  data-aos="zoom-in" alt="There must be some problem with image upload"
+                            data-aos-delay="100" class="h-50 w-50">
+                </div>
+
+                <a href="/usePdms#contact" class="btn btn-outline-success border-success col-lg-4 col-md-4 mx-auto
+                     mt-3">
+                    <h4 class="text-dark p-2">Detect the Crop Disease Again</h4></a>
+
+            </div>
+
+        </div>
+    </section>
+    <!-- End About Us Section -->
+
+
+    <!-- ======= Features Section ======= -->
+    <section id="features" class="padd-section text-center pt-4">
+
+        <div class="container" data-aos="fade-up">
+
+            <div class="row" data-aos="fade-up" data-aos-delay="100">
+
+                <div class="col-md-6 col-lg-6">
+                    <div class="feature-block">
+                        <h4 style="font-size: large">SYMPTOMS OF AFFECTED PLANT</h4>
+
+                        <p class="text-justify mb-2" style="font-size: large">
+                            {{ Symptoms }}
+
+                            <br><br>
+
+                            If it Doesn't make sense with chemical explanations hit
+                    below button for practical understanding with videos (Youtube).
+                        </p>
+
+                        <a href="https://www.youtube.com/playlist?list=PLTHBCW2_RYXVBRFraxz3Es4HAuEE9uCaH"
+                           target="_blank" class="btn btn-success btn-outline-success mt-3">
+                            WATCH VIDEOS HERE
+                        </a>
+
+
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-6">
+                    <div class="feature-block">
+                        <h4 style="font-size: large">MANAGEMENT OF AFFECTED PLANT</h4>
+                        <p class="text-justify mb-2" style="font-size: large">
+                            {{ Management }}
+                        </p>
+
+                        <a href="https://plantvillage.psu.edu/"
+                           target="_blank" class="btn btn-success btn-outline-success mt-3">
+                            CREDITS FOR THE DATA.
+                        </a>
+
+                    </div>
+                </div>
+                <a href="/usePdms#contact" class="btn btn-outline-success col-l-5 col-md-6 mx-auto
+                     mt-3">
+                    <h3 class="text-white bg-success p-2">Detect the Plant Disease Again !!!</h3></a>
+
+            </div>
+        </div>
+    </section>
+    <!-- End Features Section -->
+
+
+</main><!-- End #main -->
+
+
+<!-- ======= Footer ======= -->
+<footer class="footer">
+
+
+    <div class="copyrights mt-0">
+        <div class="bg-light p-2">
+            <p>&copy; Copyrights (Prepared by) - SIMONI SHAH.
+                <br>All rights reserved.</p>
+            <div class="credits">
+            </div>
+        </div>
+    </div>
+
+</footer><!-- End  Footer -->
+
+<a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i
+        class="bi bi-arrow-up-short"></i></a>
+
+<!-- Vendor JS Files -->
+<script src="../static/AdminResources/vendor/aos/aos.js"></script>
+<script src="../static/AdminResources/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+<script src="../static/AdminResources/vendor/glightbox/js/glightbox.min.js"></script>
+<script src="../static/AdminResources/vendor/php-email-form/validate.js"></script>
+<script src="../static/AdminResources/vendor/swiper/swiper-bundle.min.js"></script>
+
+<!-- Template Main JS File -->
+<script src="../static/AdminResources/js/main.js"></script>
+
+</body>
+
+</html>
